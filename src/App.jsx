@@ -24,8 +24,8 @@ useEffect(() => {
 }, [])
 
   return !loading ? (
-    <div className = 'min-h-screen flex-auto flex-wrap content-between bg-gray-400'>
-      <div className='w-full block'>
+    <div className = 'min-h-screen flex-auto flex-wrap content-between  rounded-xl '>
+      <div className='w-full block rounded-xl backdrop-blur-md bg-white/30'>
         <Header />
         <main>
         <Outlet/>

@@ -3,7 +3,7 @@ import React from 'react'
 function Logo({width = '100%'}) {
   return (
     <div>
-      Logo
+      <img src ="src\assets\pngg.png" width={40} height={40}/>
     </div>
   )
 }
