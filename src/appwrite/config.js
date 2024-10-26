@@ -33,7 +33,7 @@ async createPost({title, slug, content, featuredImage, status, userId}){
         }
     }
 
-async updatePost({title, slug, content, featuredImage, status}){
+async updatePost(slug, {title, content, featuredImage, status}){
     try {
        return await this.databases.updateDocument(
             conf. appwriteDatabaseId,
@@ -53,7 +53,7 @@ async updatePost({title, slug, content, featuredImage, status}){
 
 async deletePost(slug){
     try {
-        await this.deleteDocument(
+        await this.databases.deleteDocument(
             conf.appwriteDatabaseId,
             conf.appwriteCollectionId,
             slug,
